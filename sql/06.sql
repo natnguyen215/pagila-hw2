@@ -7,3 +7,7 @@
  * For this problem, you should use the NOT IN clause;
  * in problem 06b you will use the LEFT JOIN clause.
  */
+select f.title 
+from film f 
+where f.film_id not in (
+    select film_id from inventory);
